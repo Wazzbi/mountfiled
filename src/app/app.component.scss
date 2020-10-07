@@ -1,0 +1,19 @@
+#container {
+    min-height:100%;
+    position:relative;
+}
+// app-navbar {
+//     background:#ff0;
+//     padding:10px;
+// }
+#content {
+    padding:10px;
+    padding-bottom:6em;   /* Height of the footer */
+}
+app-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:5em;   /* Height of the footer */
+    //background:#6cf;
+}

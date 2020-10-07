@@ -1,3 +1,4 @@
+import { FooterComponent } from './containers/footer/footer.component';
 import { IntroductionComponent } from './containers/introduction/introduction.component';
 import { ContactsComponent } from './containers/contacts/contacts.component';
 import { ActionsComponent } from './containers/actions/actions.component';
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     NavbarComponent,
     ActionsComponent,
     ContactsComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,46 +1,28 @@
-<!-- 
-  <nav class="navbar navbar-expand-sm primary-color" fxLayout="row" fxLayoutAlign="center center">
-  <img src="../../../assets/images/logo-klasik.svg" alt="Mountfield Logo">
+<nav class="navbar navbar-expand-sm primary-color d-flex justify-content-center logo">
+  <img src="../../../assets/images/logo-klasik.svg" alt="Logo">
 </nav>
-<nav class="navbar navbar-expand-sm navbar-dark primary-color" fxLayout="row" fxLayoutAlign="center center">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold" routerLink="/introduction">Úvod</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold" routerLink="/actions">Akce</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link font-weight-bold" routerLink="/contacts">Kontakty</a>
-    </li>
-  </ul>
+
+<nav class="navbar navbar-expand-sm navbar-dark primary-color">
+  <span id="spacer"></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav d-flex justify-content-center">
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link text-center" routerLink="/introduction">Úvod</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link text-center" routerLink="/actions">Akce</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link text-center" routerLink="/contacts">Kontakty</a>
+      </li>
+    </ul>
+  </div>
 </nav>
--->
-<nav class="navbar navbar-expand-sm primary-color" fxLayout="row" fxLayoutAlign="center center">
-  <img src="../../../assets/images/logo-klasik.svg" alt="Mountfield Logo">
-</nav>
-<div class="container primary-color" fxLayout="row" fxLayoutAlign="center center">
-  <span id="spacer" fxFlex="grow"></span>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/introduction">Úvod <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/actions">Akce</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contacts">Kontakty</a>
-        </li>
-      </ul>
-    </div>
-    
-  </nav>
-  <span id="spacer" fxFlex="grow"></span>
-</div>
+
+
+
+
 

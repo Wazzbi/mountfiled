@@ -1,4 +1,15 @@
 .primary-color{
     background-color: #e22020;
-    color: black;
+    padding: 3px 3px;
+}
+.logo {
+    
+    img {
+        width: auto;
+        height: 4em;
+    }
+}
+
+.collapse.navbar-collapse > ul {
+    width: 100%;
 }

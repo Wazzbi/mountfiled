@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contacts',
@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ContactsComponent implements OnInit {
 
   constructor() { }
+
+  @ViewChild('alert', { static: true }) alert: ElementRef;
+
+  email: string = '';
+  text: string = '';
 
   persons: any[] = [
     {
@@ -33,4 +38,17 @@ export class ContactsComponent implements OnInit {
   ngOnInit() {
   }
 
+  openAlert(): void {
+    this.alert.nativeElement.classList.add('show');
+  }
+
+  closeAlert(): void {
+    this.alert.nativeElement.classList.remove('show');
+  }
+
+  onSubmit(): void{
+    const data: any = {email: this.email, text: this.text};
+    console.log(data);
+    this.openAlert()
+  }
 }

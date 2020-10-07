@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-actions',
   templateUrl: './actions.component.html',
   styleUrls: ['./actions.component.scss']
 })
-export class ActionsComponent implements OnInit {
+export class ActionsComponent {
 
   constructor() { }
 
@@ -26,8 +26,5 @@ export class ActionsComponent implements OnInit {
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corruptearum obcaecati saepe eius. Accusantium ipsum at pariatur nesciunt possimus, corporis illo assumenda? Molestias aubus dolorum dolorem natus sequi doloribusr sit amet consectetur adipisicing elit. Labore corrupti ducimus numquam, autem molestiae repellat, eaque at voluptatibus alias dolorum quibusdam excepturi, consectetur sed earum obcaecati saepe eius. Accusantium ipsum at pariatur nesciuitatibus dolorum dolorem natus sequi doloribus eaque veritatis ratione? Dignissimos.'
     }
   ];
-
-  ngOnInit() {
-  }
 
 }

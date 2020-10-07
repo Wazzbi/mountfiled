@@ -13,6 +13,9 @@ export class ContactsComponent implements OnInit {
   @ViewChild('alert', { static: true }) alert: ElementRef;
   @ViewChild('map', {static: true}) mapElement: any;
 
+  // in case of trouble
+  // https://stackoverflow.com/questions/51677452/angular-6-application-cannot-find-namespace-google/51677731
+  // https://medium.com/@jkeung/integrating-google-maps-api-w-angular-7-e7672396ce2d
   map: google.maps.Map;
   email: string = '';
   text: string = '';

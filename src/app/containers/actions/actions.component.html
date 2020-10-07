@@ -1,3 +1,18 @@
-<p>
-  actions works!
-</p>
+<div class="container mt-3">
+  <div class="card my-3" *ngFor="let article of articles">
+    <div class="row no-gutters">
+        <div class="col-auto">
+            <img [src]="article.imgUrl" class="img-fluid" alt="" width="400" height="400">
+        </div>
+        <div class="col">
+            <div class="card-block p-3">
+                <h4 class="card-title">{{article.title}}</h4>
+                <p class="card-text">{{article.text}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<span>
+</span>

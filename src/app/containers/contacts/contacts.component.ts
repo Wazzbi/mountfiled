@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import {} from 'googlemaps';
 
 @Component({
   selector: 'app-contacts',
@@ -10,7 +11,9 @@ export class ContactsComponent implements OnInit {
   constructor() { }
 
   @ViewChild('alert', { static: true }) alert: ElementRef;
+  @ViewChild('map', {static: true}) mapElement: any;
 
+  map: google.maps.Map;
   email: string = '';
   text: string = '';
 
@@ -35,8 +38,14 @@ export class ContactsComponent implements OnInit {
     }
   ];
 
-  ngOnInit() {
-  }
+  ngOnInit(): void {
+    const mapProperties = {
+         center: new google.maps.LatLng( 50.049312, 14.436790 ),
+         zoom: 15,
+         mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
+ }
 
   openAlert(): void {
     this.alert.nativeElement.classList.add('show');

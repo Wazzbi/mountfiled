@@ -6,6 +6,10 @@
 */
 {
   "files": [],
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": ["googlemaps"]
+   },
   "references": [
     {
       "path": "./tsconfig.app.json"
